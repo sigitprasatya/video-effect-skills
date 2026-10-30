@@ -1,5 +1,75 @@
 # Video Effect Skills
 
+**English** | [Bahasa Indonesia](README.md)
+
+A Claude Code skill that adds 45 video effects to talking-head videos
+(spotlight, orbit, glass widgets, timeline, LED sign, and more). Effects
+track the speaker's face and can sit behind their head.
+
+Based on [claude-video-effects](https://github.com/Vibha-Ramprakash/claude-video-effects)
+by Vibha Ramprakash, modified by Sigit Prastyo.
+Released under the MIT License (see the `LICENSE` file).
+
+## Requirements
+
+- Claude Code (desktop app or terminal)
+- Git
+- Python 3.12 and ffmpeg (the skill tells you if either is missing)
+
+## Install on Windows
+
+Open Command Prompt (cmd) and run:
+
+```
+git clone https://github.com/sigitprasatya/video-effect-skills "%USERPROFILE%\.claude\skills\effects"
+```
+
+If you use PowerShell:
+
+```
+git clone https://github.com/sigitprasatya/video-effect-skills $HOME\.claude\skills\effects
+```
+
+In cmd, do not use `~`. Use `%USERPROFILE%` as shown above.
+
+## Install on Mac / Linux
+
+```
+git clone https://github.com/sigitprasatya/video-effect-skills ~/.claude/skills/effects
+```
+
+## After installing
+
+1. Fully close Claude Code, then open it again.
+2. Type `/effects` in the chat box. If it shows up, the skill is installed.
+
+## How to use
+
+1. Open Claude Code and start a new session.
+2. Drag your video into the chat (a vertical talking-head video works best).
+3. Type `/effects` followed by an effect name, for example: `/effects spotlight`.
+   If you are not sure which effect to pick, type `/effects show me the list of effects`.
+4. The first time you use it, setup runs automatically and takes 1 to 3 minutes.
+
+## Troubleshooting
+
+- **ffmpeg is missing**: run `winget install ffmpeg` (Windows) or
+  `brew install ffmpeg` (Mac).
+- **Python 3.12 is missing**: run `winget install Python.Python.3.12`
+  (Windows) or `brew install python@3.12` (Mac).
+- **`/effects` does not appear**: make sure `SKILL.md` is in
+  `.claude/skills/effects/`, then restart Claude Code.
+
+## License and credits
+
+- Code: MIT. Copyright (c) 2026 Vibha Ramprakash and Sigit Prastyo (modifications).
+- The fonts in `fonts/` and the models in `models/` keep their own licenses
+  (see `fonts/*.txt` and `models/NOTICE.md`).
+
+# Bahasa Indonesia
+
+# Video Effect Skills
+
 Skill untuk Claude Code yang menambahkan 45 efek video ke video talking-head
 (spotlight, orbit, glass widgets, timeline, LED sign, dan lainnya). Efek
 mengikuti wajah pembicara dan bisa diletakkan di belakang kepala.
